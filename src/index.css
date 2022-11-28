@@ -1,13 +1,176 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --mainColor:gold;
+    --secColor:#121129;
+}
+.bg-main{
+    background-color: var(--secColor) !important;
+}
+.text-main{
+    color: var(--mainColor) !important;
+}
+.border-main{
+    border: 1px solid gold !important;
+}
+.land{
+    background-image: url('Images/back.jpg');
+    height: 92vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.land img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-25%, -50%);
+    animation: up-down  5s   linear  infinite;
+}
+.img{
+    height: 150px !important;
+    width: 150px !important;
+}
+.fit{
+    width: fit-content !important;
+    height: fit-content !important;
+}
+.link{
+    text-decoration: none;
+}
+.cardd{
+    width: 260px !important;
+    height: 260px !important;
+}
+.hoverlink a:hover{
+   font-weight: bold;
+   border-bottom: 1px solid gold;
+   font-size: large;
+   transition: .3s;
+   -webkit-transition: .3s;
+   -moz-transition: .3s;
+   -ms-transition: .3s;
+   -o-transition: .3s;
+}
+
+.reduceR{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-top-left-radius:0 ;
+    border-bottom-left-radius:0 ;
+    box-shadow: 6px 0px 23px -9px;
+}
+.reduceL{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+    box-shadow: -5px -1px 23px -9px;
+}
+.creame{
+    color: #ebebeb !important;
+}
+.bt{
+    background-color: transparent;
+    padding: 5px 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 1px solid white;
+    
+}
+.bt2{
+    padding: 5px 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 1px solid white;
+
+}
+.bt:hover ,.bt2:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+.inp{
+    background-color: #ededee;
+    padding: 4px 15px;
+    border: none;
+    width: 250px;
+    border-radius: 10px;
+}
+.subTitle{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+@keyframes up-down {
+    0%, 100%{
+        top: 50%;
+       
+    }
+    50%{
+        top: 40%;
+    }
+    
+}
+.navBar{
+    position: sticky!important;
+    top: 0;
+    z-index: 1;
+}
+.reduce{ border-radius:30px !important; -webkit-border-radius:30px !important; -moz-border-radius:30px !important; -ms-border-radius:30px !important; -o-border-radius:30px !important; }
+
+@media (max-width:768px) {
+    .land img{
+    width: 150px;
+    height: 150px;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    -webkit-transform: translate(-20%, -50%);
+    -moz-transform: translate(-20%, -50%);
+    -ms-transform: translate(-20%, -50%);
+    -o-transform: translate(-20%, -50%);
+}
+}
+.bord{
+  border-bottom: 1px solid !important;
+}
+.hov:hover{
+  font-weight: 800;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.click{
+    cursor: pointer;
+}
+.cardhov:hover {
+    background-color: var(--secColor);
+    color: gold;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
