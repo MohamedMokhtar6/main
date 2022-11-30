@@ -10,11 +10,10 @@ function CourseCard() {
                 <Card style={{ border: "none" }} className='cardhov' >
 
 
-                    <Card.Img variant="top" src={img} style={{ height: "200px", width: '180px' }} className="" />
+                    <Card.Img variant="top" src={img} style={{ height: "150px", width: '220px' }} className="" />
 
-                    <p><i className="fa-regular fa-heart"></i></p>
                     <Card.Body className='p-0'>
-                        <p className='text-center'>Machine learning course</p>
+                        <p className='text-center m-2'>Machine learning course</p>
 
 
                     </Card.Body>

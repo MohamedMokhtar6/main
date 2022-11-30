@@ -1,9 +1,5 @@
-import "./App.css";
-import HomePage from "./Pages/HomePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginPage from "./Pages/LoginPage";
-import SignUpPage from "./Pages/SignUpPage";
 import FooterBar from "./Components/util/FooterBar";
 import AdminAllUsersPage from "./Pages/Admin/AdminAllUsersPage";
 import AdminAllCompetitionsPage from "./Pages/Admin/AdminAllCompetitionsPage";
@@ -17,7 +13,12 @@ import AdminCreateModelPage from "./Pages/Admin/AdminCreateModelPage";
 import AdminCreateQuizPage from "./Pages/Admin/AdminCreateQuizPage";
 import AdminCreateTutorialPage from "./Pages/Admin/AdminCreateTutorialPage";
 import AdminCreateUserPage from "./Pages/Admin/AdminCreateUserPage";
-import Content from './Components/components/Content'
+import Courses from './Components/components/Courses'
+import HomePage from "./Pages/Home/HomePage";
+import LoginPage from "./Pages/auth/LoginPage";
+import SignUpPage from "./Pages/auth/SignUpPage";
+import CoursePage from "./Pages/Course/CoursePage";
+import About from "./Pages/About/About";
 
 
 
@@ -43,7 +44,9 @@ function App() {
           <Route path="/admin/createmodel" element={<AdminCreateModelPage />} />
           <Route path="/admin/createlearningpath" element={<AdminCreateLearningPathPage />} />
           <Route path="/admin/createquiz" element={<AdminCreateQuizPage />} />
-          <Route path="/courses" element={<Content />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/course/:id" element={<CoursePage />} />
+          <Route path="/about" element={<About />} />
 
 
 

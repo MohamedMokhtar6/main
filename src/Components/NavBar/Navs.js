@@ -8,6 +8,7 @@ import {
     Nav,
 
     Navbar,
+    NavDropdown,
 
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -32,11 +33,17 @@ function Navs() {
                         <Link to={'/courses'} className='link text-main mx-2 p-1'>
                             Courses
                         </Link>
+
+
+
                         <a href={'https://mohamedmokhtar6-ml-playgrounf-streamlit-app-hg787m.streamlit.app/'} className='link text-main mx-2 p-1' target={'_blank'}>
                             Playground
                         </a>
                         <Link to={'/computations'} className='link text-main mx-2 p-1'>
                             Computations
+                        </Link>
+                        <Link to={'/about'} className='link text-main mx-2 p-1'>
+                            About Us
                         </Link>
                     </Nav>
                     <div className="d-flex justify-content-between">
