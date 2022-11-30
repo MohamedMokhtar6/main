@@ -23,8 +23,6 @@ import Content from './Components/components/Content'
 
 
 function App() {
-
-
   return (
     <>
       <BrowserRouter>
