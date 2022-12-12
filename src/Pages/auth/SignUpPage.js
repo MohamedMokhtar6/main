@@ -1,13 +1,14 @@
 import React from 'react'
+import SignUpForm from '../../Components/Login/SignUpForm'
 import Navs from '../../Components/NavBar/Navs'
-import SignUpForm from '../../Components/Login/LoginForm'
+import Navs2 from '../../Components/NavBar/Navs2'
 
 function SignUpPage() {
     return (
-        <>
-            <Navs />
+        <div className='backg'>
+            <Navs2 />
             <SignUpForm />
-        </>
+        </div>
     )
 }
 

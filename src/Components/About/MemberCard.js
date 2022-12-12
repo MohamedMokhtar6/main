@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 function MemberCard({ Name, image, face, tweeter, linkedin }) {
     return (
         <>
-            <Col className='fit text-center justify-content-center team m-4'>
+            <Col className='fit text-center justify-content-center team m-2'>
                 <div className='d-flex fit align-items-center pt-3'>
                     <img src={image} alt='t' className='reduce  ' style={{ width: "300px", height: "300px" }} />
                     <ul className='fit'>

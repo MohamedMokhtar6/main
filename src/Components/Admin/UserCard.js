@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Col, Button, Modal } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import img from '../../Images/avatar-06.png'
 
-function UserCard() {
+function UserCard({ img, Role, Name }) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleDelete = async () => {
@@ -30,7 +29,7 @@ function UserCard() {
 
 
 
-            <Col xs='12' sm='6' md='5' lg='4' className='d-flex   mb-3 '>
+            <Col xs='12' sm='6' md='5' lg='4' className='d-flex   mb-3  justify-content-center'>
                 <div style={{ border: "none" }} className=" white d-flex flex-column p-2 justify-content-center text-center" >
                     <div className='d-flex justify-content-between p-1 m-2 '>
                         <Link to={`/admin/edituser/:id`} style={{ textDecoration: "none", color: "black" }} className=''>
@@ -43,10 +42,10 @@ function UserCard() {
                     <div className=''>
 
                         <p>
-                            Mohamed
+                            {Name}
                         </p>
                         <p>
-                            Admin
+                            {Role}
                         </p>
 
                     </div>

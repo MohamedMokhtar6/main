@@ -6,10 +6,8 @@ import { Bounce } from 'react-reveal'
 
 function SignUpForm() {
     return (
-        <Container style={{ minHeight: '82vh' }}>
+        <Container style={{ minHeight: '83vh' }} >
             <Bounce right >
-
-
                 <Row className=' m-5 justify-content-center '>
                     <Col style={{ width: '400px', height: "500px", flex: "none" }} className='bg-main p-0 reduceL creame  d-flex flex-column align-items-center justify-content-center '>
                         <h2 className='my-2 text-main'>Sign In</h2>
@@ -19,7 +17,7 @@ function SignUpForm() {
                             <button className='text-main border-main bt my-3'>SING IN</button>
                         </Link>
                     </Col>
-                    <Col style={{ width: '400px', height: "500px", flex: "none" }} className=' p-0 reduceR d-flex flex-column text-center align-items-center  '>
+                    <Col style={{ width: '400px', height: "500px", flex: "none" }} className='bg-white p-0 reduceR d-flex flex-column text-center align-items-center  '>
                         <h2 className='fw-bold' style={{ marginTop: "50px" }}>Sign Up</h2>
                         <input type={'email'} placeholder='Email' className='my-3 inp' />
                         <input type={'text'} placeholder='User Name' className='my-3 inp' />

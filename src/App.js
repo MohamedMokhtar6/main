@@ -2,23 +2,27 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FooterBar from "./Components/util/FooterBar";
 import AdminAllUsersPage from "./Pages/Admin/AdminAllUsersPage";
-import AdminAllCompetitionsPage from "./Pages/Admin/AdminAllCompetitionsPage";
-import AdminAllLearningPathsPage from "./Pages/Admin/AdminAllLearningPathsPage";
-import AdminAllModelsPage from "./Pages/Admin/AdminAllModelsPage";
-import AdminAllQuizzesPage from "./Pages/Admin/AdminAllQuizzesPage";
-import AdminAllTutorialsPage from "./Pages/Admin/AdminAllTutorialsPage";
-import AdminCreateCompetitionPage from "./Pages/Admin/AdminCreateCompetitionPage";
-import AdminCreateLearningPathPage from "./Pages/Admin/AdminCreateLearningPathPage";
-import AdminCreateModelPage from "./Pages/Admin/AdminCreateModelPage";
-import AdminCreateQuizPage from "./Pages/Admin/AdminCreateQuizPage";
-import AdminCreateTutorialPage from "./Pages/Admin/AdminCreateTutorialPage";
+import AdminAllBooksPage from "./Pages/Admin/AdminAllBooksPage";
+import AdminAllBooksReqouestPage from "./Pages/Admin/AdminAllBooksReqouestPage";
+import AdminCreateEventPage from "./Pages/Admin/AdminCreateEventPage";
 import AdminCreateUserPage from "./Pages/Admin/AdminCreateUserPage";
-import Courses from './Components/components/Courses'
 import HomePage from "./Pages/Home/HomePage";
 import LoginPage from "./Pages/auth/LoginPage";
 import SignUpPage from "./Pages/auth/SignUpPage";
-import CoursePage from "./Pages/Course/CoursePage";
 import About from "./Pages/About/About";
+import BookDetailsPage from "./Pages/books/BookDetailsPage";
+import TeacherAllEventPage from "./Pages/Teacher/TeacherAllEventPage";
+import TeacherAddResultPage from "./Pages/Teacher/TeacherAddResultPage";
+import TeacherAddAttendancePage from "./Pages/Teacher/TeacherAddAttendancePage";
+import TeacherAddAssignmentPage from "./Pages/Teacher/TeacherAddAssignmentPage";
+import LibrarianAllEventPage from "./Pages/Librarian/LibrarianAllEventPage";
+import LibrarianAddBookPage from "./Pages/Librarian/LibrarianAddBookPage";
+import LibrarianRequestBookPage from "./Pages/Librarian/LibrarianRequestBookPage";
+import StudentAllEventPage from "./Pages/Student/StudentAllEventPage";
+import StudentAttendancePage from "./Pages/Student/StudentAttendancePage";
+import StudentResultPage from "./Pages/Student/StudentResultPage";
+import StudentAssignmentPage from "./Pages/Student/StudentAssignmentPage";
+import BooksPage from "./Pages/books/BooksPage";
 
 
 
@@ -29,24 +33,30 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          <Route index element={<HomePage />} />
+          <Route index element={<SignUpPage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/admin/allusers" element={<AdminAllUsersPage />} />
-          <Route path="/admin/alltutorials" element={<AdminAllTutorialsPage />} />
-          <Route path="/admin/allcompetitions" element={<AdminAllCompetitionsPage />} />
-          <Route path="/admin/allmodels" element={<AdminAllModelsPage />} />
-          <Route path="/admin/alllearningpathes" element={<AdminAllLearningPathsPage />} />
-          <Route path="/admin/allquizzes" element={<AdminAllQuizzesPage />} />
+          <Route path="/admin/allbooksrequests" element={<AdminAllBooksReqouestPage />} />
+          <Route path="/admin/allbooks" element={<AdminAllBooksPage />} />
           <Route path="/admin/createuser" element={<AdminCreateUserPage />} />
-          <Route path="/admin/createtutorial" element={<AdminCreateTutorialPage />} />
-          <Route path="/admin/createcompetition" element={<AdminCreateCompetitionPage />} />
-          <Route path="/admin/createmodel" element={<AdminCreateModelPage />} />
-          <Route path="/admin/createlearningpath" element={<AdminCreateLearningPathPage />} />
-          <Route path="/admin/createquiz" element={<AdminCreateQuizPage />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/course/:id" element={<CoursePage />} />
+          <Route path="/admin/createevent" element={<AdminCreateEventPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/teacher/allevent" element={<TeacherAllEventPage />} />
+          <Route path="/teacher/addresult" element={<TeacherAddResultPage />} />
+          <Route path="/teacher/addattendance" element={<TeacherAddAttendancePage />} />
+          <Route path="/teacher/addAssignment" element={<TeacherAddAssignmentPage />} />
+          <Route path="/librarian/allevent" element={<LibrarianAllEventPage />} />
+          <Route path="/librarian/addBook" element={<LibrarianAddBookPage />} />
+          <Route path="/librarian/viewRequestBook" element={<LibrarianRequestBookPage />} />
+          <Route path="/student/allevent" element={<StudentAllEventPage />} />
+          <Route path="/student/attendance" element={<StudentAttendancePage />} />
+          <Route path="/student/result" element={<StudentResultPage />} />
+          <Route path="/student/assignment" element={<StudentAssignmentPage />} />
+          <Route path="/book/:id" element={<BookDetailsPage />} />
+          <Route path="/allBooks" element={<BooksPage />} />
+
 
 
 
