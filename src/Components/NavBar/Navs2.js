@@ -1,9 +1,5 @@
 import React from "react";
 import { Container, Nav, Navbar, } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { islogin } from "../Login/LoginForm";
-import { link } from "../Login/LoginForm";
-import { user } from "../Login/LoginForm";
 
 function Navs2() {
     return (
